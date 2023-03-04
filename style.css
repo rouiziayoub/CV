@@ -5,21 +5,22 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #fff;
+}
+main {
+  border-radius: 15px;
+  background-color: #a4c6de;
+}
 .container .row {
   border-bottom: 3px;
 }
-.container .row .col-md-7 {
-  border-radius: 3%;
-  border-left: white 3px solid;
+.container .row .col-md-7 ul li {
+  list-style: none;
 }
 .container .row .col-md-5 img {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-  border: 2px solid black;
-  border-bottom: 3px solid cornflowerblue;
-  border-top: 3px solid cornflowerblue;
-  border-left: 3px solid red;
-  border-right: 3px solid red;
   border-radius: 100%;
 }
 .container .rca {
@@ -42,20 +43,117 @@
   text-decoration: none;
   color: rebeccapurple;
 }
-.Experiences .container .row .col-md-12 .Experiences-icon i a {
-  display: flex;
-  justify-content: center;
-  padding-left: 154px;
+.Experiences .container .row .col-md-12 .Experiences-icon .profil {
+  padding-left: 74px;
 }
+.Experiences .container .row .col-md-12 .Experiences-icon .profil::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 74%;
+  width: 49%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.Experiences .container .row .col-md-12 .Experiences-icon .profil:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.Experiences
+  .container-fluid
+  .row
+  .col-md-6
+  .container-fluid-icon
+  .form::after {
+  content: "";
+  position: absolute;
+  left: 21%;
+  top: 186%;
+  width: 19%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.Experiences
+  .container-fluid
+  .row
+  .col-md-6
+  .container-fluid-icon
+  .form:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.Experiences .container-fluid .row .col-md-4 a {
+  text-decoration: none;
+  color: blue;
+}
+.Experiences .container-fluid .row .col-md-4 .maitrsés:after {
+  content: "";
+  position: absolute;
+  left: 69%;
+  top: 103%;
+  width: 21%;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.Experiences .container-fluid .row .col-md-4 .maitrsés:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.Experiences .container-fluid .row .col-md-4 .langues:after {
+  content: "";
+  position: absolute;
+  left: 69%;
+  top: 149.5%;
+  width: 7%;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.Experiences .container-fluid .row .col-md-4 .langues:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.Experiences .container-fluid .row .col-md-4 .intérets::after {
+  content: "";
+  position: absolute;
+  left: 69%;
+  top: 167.8%;
+  width: 7%;
+  height: 3px;
+  background: #000;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.Experiences .container-fluid .row .col-md-4 .intérets:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 .Experiences .container .row .col-md-12 .Experiences-icon a {
   text-decoration: none;
   font-size: 35px;
 }
-.Experiences .container .row .col-md-12 .Experiences-icon a:hover {
-  color: blue;
-}
 .Experiences .container .row .col-md-12 div img {
   display: flex;
+  border-radius: 50%;
+  box-shadow: #fff 0px 0px 0px 0px;
   justify-content: center;
   align-items: center;
   width: 12%;
@@ -73,23 +171,16 @@
 }
 .Experiences .container-fluid .row .col-md-2 p a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 550;
+  color: #fff;
 }
 .Experiences .container-fluid .row .col-md-2 p a:hover {
   color: #fd7e14;
-}
-.Experiences .container-fluid .row .col-md-6 .container-fluid-icon i a {
-  display: flex;
-  justify-content: center;
-  padding-left: 154px;
 }
 .Experiences .container-fluid .row .col-md-6 .container-fluid-icon a {
   text-decoration: none;
   color: #000;
   font-size: 35px;
-}
-.Experiences .container-fluid .row .col-md-6 .container-fluid-icon a:hover {
-  color: blue;
 }
 .Experiences .container-fluid .row .col-md-6 p a {
   text-decoration: none;
